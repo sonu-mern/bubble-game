@@ -22,7 +22,7 @@ html,body{
 }
 .panel{
     height: 70vh;
-    width: 90vw;
+    width: 94vw;
     border: 0px black solid;
     border-radius: 10px;
     background-color: azure;
@@ -266,6 +266,7 @@ align-items: center;
         gap:10px;
         padding-left: 60px;
     }
+
     
   }
   .footer{
@@ -285,4 +286,5 @@ align-items: center;
   .exit:hover{
     color: red;
     font-size: 40px;
+    
   }
