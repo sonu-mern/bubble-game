@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <h1 id="title">The bubble game</h1>
+        <div class="panel">
+            <div class="ptop">
+                <div class="combine">
+                    <h3>find</h4> 
+                    <div id="hit" class="inbox">0</div>
+                </div>
+                <div class="combine">
+                    <h3>timer</h4> 
+                    <div id="time" class="inbox">0</div>
+                </div>
+                <div class="combine">
+                    <h3>score</h4> 
+                    <div id="score" class="inbox">0</div>
+                </div>
+                
+            </div>
+            <div class="pbottom">
+                <button onclick="start()" class="btn" type="button">
+                    <strong>Play Bubble Game</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>
+              
+                
+            </div>
+        </div>
+
+
+        <audio id="myAudio" src="sound.mp3"></audio>
+    </div>
+    
+</body>
+<script src="js.js"></script>
+
+</html>
