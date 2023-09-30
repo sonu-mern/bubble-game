@@ -3,6 +3,7 @@ var num = 0;
 var ran = 0;
 var newscore=0;
 var newscore=0;
+var tcount =0;
 function start (){
 
     function makeBubble(){
@@ -18,7 +19,7 @@ function start (){
     makeBubble();
     
     function runtimer(){
-    var tcount=   setInterval(function (){
+     tcount=   setInterval(function (){
            if(timer > 0){
     
                timer--;
@@ -46,11 +47,7 @@ function start (){
         newscore += 10;
         document.querySelector("#score").textContent=newscore;
     }
-    function mscore(){
-       
-        mnewscore += 10;
-        document.querySelector("#score").textContent=mnewscore;
-    }
+  
     
     function countScore (){
       document.querySelector(".pbottom").addEventListener("click",function(detail){
@@ -80,6 +77,11 @@ function start (){
     }
     countScore();
 }
+
+document.querySelector(".exit").addEventListener("click",function(){
+    location.reload();
+
+})
 
 
 
